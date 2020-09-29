@@ -1,7 +1,7 @@
 <h1>Login Page</h1>
 
-<img src=""></img>
-<img src=""></img>
+<img src="https://samukdev.github.io/login-page/assets/img/smallscreens.png"></img>
+<img src="https://samukdev.github.io/login-page/assets/img/mlscreens.png"></img>
 
 
 Nesse projeto utilizei HTML,CSS e Javascript junto ao Bulma e ao VueJS para desenvolver uma página de login com foco na expêriencia do usuário.
