@@ -19,8 +19,8 @@
            
             <div class="is-hidden-touch img-logo">
                 <h2 class="subtitle has-text-centered my-5 py-5">Somos apaixonados por tecnologia.</h2>
-                <a href="https://www.linkedin.com/company/yboh/"><button class="button is-link mx-4 is-rounded py-5 is-circle"><i class="fab fa-linkedin-in"></i></button></a>
-                <a href="https://web.facebook.com/YBOHbusinessmobile"><button class="button is-link mx-4 is-rounded py-5 is-circle"><i class="fab fa-facebook-f"></i></button></a>
+                <a href="https://www.linkedin.com/company/yboh/"><button class="button is-link mx-4 is-rounded py-5 is-circle"><i class="fab fa-linkedin-in"></i><span class="is-sr-only">Perfil no Linkedin</span></button></a>
+                <a href="https://web.facebook.com/YBOHbusinessmobile"><button class="button is-link mx-4 is-rounded py-5 is-circle"><i class="fab fa-facebook-f"></i><span class="is-sr-only">Perfil no facebook </span></button></a>
             </div>
              
            </div>
@@ -41,7 +41,8 @@
                         novalidate="true">
 
 
-                        <div class="field">                          
+                        <div class="field"> 
+                            <label class="label is-sr-only">Email</label>                         
                             <div class="control has-icons-left has-icons-right">
                               <input v-model="inputEmail" class="input is-rounded" :class="{'is-danger': emailErrorMessage}" type="email" placeholder="Email" name="email">
                               <span class="px-5 icon is-small is-left">
@@ -52,6 +53,7 @@
                         </div>
 
                         <div class="field">  
+                            <label class="label is-sr-only">Senha</label>
                             <div class="control has-icons-left has-icons-right">
                               <input v-model="inputPassword" class="input is-rounded" :class="{'is-danger': passwordErrorMessage}" :type="passwordFieldType" placeholder="Senha" name="senha">
                               <span class="px-5 icon is-small is-left">
@@ -64,6 +66,7 @@
                         </div>
 
                         <div class="field has-text-right is-size-6">
+                            <label class="label is-sr-only">Mostrar senha</label>
                             <label class="checkbox">
                                 <input v-model="inputMostrarSenha" type="checkbox">
                                 Mostrar senha
@@ -79,10 +82,10 @@
                         <p class="has-text-centered mb-3">ou entre com</p>
                         <div class="columns is-mobile">
                             <div class="column py-1">
-                                <a class="button is-google bs-google is-rounded is-fullwidth"><i class="fab fa-google fa-lg mr-3 has-text-light"></i>Google</a>
+                                <a class="button is-google bs-google is-rounded is-fullwidth"><i class="fab fa-google fa-lg mr-3 has-text-light"></i><span class="is-sr-only">Entrar com </span> Google</a>
                             </div>
                             <div class="column py-1">
-                                <a class="button is-facebook bs-facebook is-rounded is-fullwidth"><i class="fab fa-facebook-f fa-lg mr-3 has-text-light"></i>Facebook</a>
+                                <a class="button is-facebook bs-facebook is-rounded is-fullwidth"><i class="fab fa-facebook-f fa-lg mr-3 has-text-light"></i><span class="is-sr-only">Entrar com </span> Facebook</a>
                             </div>
                         </div>
                         <p class="has-text-centered"><a href="" class="has-text-grey is-size-6">Esqueceu a senha?</a></p>
