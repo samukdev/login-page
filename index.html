@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="has-background-light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="assets/js/fontawesome.js"></script>
+    <link rel="stylesheet" href="assets/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Login_</title>
+</head>
+<body >
+    <div id="app">
+    <div class="container">
+        <section class="section">
+       <div class="columns is-vcentered">
+           <div class="column has-text-centered">
+           
+                <img src="assets/img/yboh_logo.png" alt="Logo empresa YBOH">
+           
+            <div class="is-hidden-touch img-logo">
+                <h2 class="subtitle has-text-centered my-5 py-5">Somos apaixonados por tecnologia.</h2>
+                <a href=""><button class="button is-link mx-4 is-rounded py-5 is-circle"><i class="fab fa-linkedin-in"></i></button></a>
+                <a href=""><button class="button is-link mx-4 is-rounded py-5 is-circle"><i class="fab fa-facebook-f"></i></button></a>
+            </div>
+             
+           </div>
+           <div class="column">
+
+                <h1 class="title has-text-centered is-size-3">Bem vindo de volta!</h1>
+                <h2 class="subtitle has-text-centered is-size-5 mb-6 pb-3">Efetue login para continuar</h2>
+                
+
+                <div class="columns">
+                    <div class="column is-8 is-offset-2">
+                        
+                        <!-- INPUTS EMAIL E SENHA -->
+                        <form
+                        @submit="validateLogin"
+                        action="https://yboh.com.br/"
+                        method="post"
+                        novalidate="true">
+
+
+                        <div class="field">                          
+                            <div class="control has-icons-left has-icons-right">
+                              <input v-model="inputEmail" class="input is-rounded" :class="{'is-danger': emailErrorMessage}" type="email" placeholder="Email" name="email">
+                              <span class="px-5 icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                              </span>
+                            </div>
+                            <p class="help is-danger pl-3" v-if="emailErrorMessage">{{emailErrorMessage}}</p>
+                        </div>
+
+                        <div class="field">  
+                            <div class="control has-icons-left has-icons-right">
+                              <input v-model="inputPassword" class="input is-rounded" :class="{'is-danger': passwordErrorMessage}" :type="passwordFieldType" placeholder="Senha" name="senha">
+                              <span class="px-5 icon is-small is-left">
+                                <i class="fas fa-lock"></i>
+                              </span>
+                              
+                            </div>
+                            <p class="help is-danger pl-3" v-if="passwordErrorMessage">{{passwordErrorMessage}}</p>
+
+                        </div>
+
+                        <div class="field has-text-right is-size-6">
+                            <label class="checkbox">
+                                <input v-model="inputMostrarSenha" type="checkbox">
+                                Mostrar senha
+                            </label>
+                        </div>
+                        
+
+                        <!-- Botão Login -->
+                        <button class="button is-login is-danger bs-login is-fullwidth is-rounded box mb-3"  type="submit">Entrar</button>
+                       
+
+                        <!-- Botões entre com as redes sociais -->
+                        <p class="has-text-centered mb-3">ou entre com</p>
+                        <div class="columns is-mobile">
+                            <div class="column py-1">
+                                <a class="button is-google bs-google is-rounded is-fullwidth"><i class="fab fa-google fa-lg mr-3 has-text-light"></i>Google</a>
+                            </div>
+                            <div class="column py-1">
+                                <a class="button is-facebook bs-facebook is-rounded is-fullwidth"><i class="fab fa-facebook-f fa-lg mr-3 has-text-light"></i>Facebook</a>
+                            </div>
+                        </div>
+                        <p class="has-text-centered"><a href="" class="has-text-grey is-size-6">Esqueceu a senha?</a></p>
+                       
+                    </div>
+                </form>
+                </div>
+               
+
+           </div>
+       </div>
+    </section>
+</div>
+    </div>    
+</body>
+<script src="assets/js/vue.js"></script>
+<script src="main.js"></script>
+</html>
