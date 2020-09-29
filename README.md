@@ -27,5 +27,6 @@ Utilizei um array de objetos com os usuários para simular um banco de dados. H�
 
 
 Os botões de esqueci minha senha e logar com redes sociais não possuem função já que a página não possui um banco de dados até então.
+PS: Tem um easter egg de um cafézinho de background haha 
 
 É isso, espero que gostem :D
